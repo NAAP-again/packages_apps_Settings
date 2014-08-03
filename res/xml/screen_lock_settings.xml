@@ -59,4 +59,9 @@
         android:summary="@string/qstile_requires_unlocking_summary"
         android:defaultValue="true"/>
 
+    <SwitchPreferenceCompat
+        android:key="lockscreen_scramble_pin_layout"
+        android:title="@string/unlock_scramble_pin_layout_title"
+        android:summary="@string/unlock_scramble_pin_layout_summary" />
+
 </PreferenceScreen>
