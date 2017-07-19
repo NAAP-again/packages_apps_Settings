@@ -46,6 +46,7 @@ import com.nasp.settings.preferences.SecureSettingSwitchPreference;
 import com.nasp.settings.preferences.SystemSettingListPreference;
 import com.nasp.settings.preferences.SystemSettingMasterSwitchPreference;
 import com.nasp.settings.preferences.SystemSettingSwitchPreference;
+import com.nasp.settings.Utils;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -66,6 +67,7 @@ public class StatusBarSettings extends DashboardFragment implements
     private static final String SHOW_BATTERY_PERCENT_INSIDE = "status_bar_show_battery_percent_inside";
     private static final String LOCATION_INDICATOR_KEY = "location_indicators_enabled";
     private static final String CAMERA_MIC_INDICATOR_KEY = "camera_mic_icons_enabled";
+    private static final String KEY_SHOW_FOURG = "show_fourg_icon";
 
     private SystemSettingMasterSwitchPreference mNetTrafficState;
     private SystemSettingListPreference mClockPosition;
@@ -75,6 +77,7 @@ public class StatusBarSettings extends DashboardFragment implements
     private SystemSettingSwitchPreference mBatteryPercentInside;
     private SwitchPreferenceCompat mLocationIndicator;
     private SwitchPreferenceCompat mCameraMicIndicator;
+    private SystemSettingSwitchPreference mShowFourg;
 
     @Override
     protected int getPreferenceScreenResId() {
@@ -138,6 +141,11 @@ public class StatusBarSettings extends DashboardFragment implements
         enabled = getDeviceConfig(CAMERA_MIC_INDICATOR_KEY);
         mCameraMicIndicator.setChecked(enabled);
         mCameraMicIndicator.setOnPreferenceChangeListener(this);
+
+        mShowFourg = findPreference(KEY_SHOW_FOURG);
+        enabled = Utils.isVoiceCapable(getActivity());
+        mShowFourg.setEnabled(enabled);
+
     }
 
     @Override
