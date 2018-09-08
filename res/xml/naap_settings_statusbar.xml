@@ -59,14 +59,16 @@
         android:summary="@string/show_fourg_icon_summary"
         android:defaultValue="false"/>
 
-    <!-- Clock position -->
-    <com.nasp.settings.preferences.SystemSettingListPreference
-        android:key="statusbar_clock_position"
-        android:title="@string/statusbar_clock_position_title"
-        android:dialogTitle="@string/statusbar_clock_position_title"
-        android:entries="@array/statusbar_clock_position_entries"
-        android:entryValues="@array/statusbar_clock_position_values"
-        android:persistent="false" />
+    <PreferenceCategory
+        android:key="statusbar_clock_cat"
+        android:title="@string/status_bar_items_category_title">
+
+        <Preference
+            android:title="@string/status_bar_clock_date_title"
+            android:summary="@string/status_bar_clock_date_summary"
+            android:fragment="com.android.settings.system.StatusBarClockDateSettings" />
+
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:title="@string/battery_options">
