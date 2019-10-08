@@ -56,6 +56,13 @@
         android:summaryOff="@string/qs_media_controls_summary_off"
         android:defaultValue="true" />
 
+    <!-- QS Header image -->
+    <Preference
+        android:key="qs_header_image"
+        android:title="@string/qs_header_image_title"
+        android:summary="@string/qs_header_image_summary"
+        android:fragment="com.android.settings.system.QsHeaderImageSettings" />
+
     <!-- Gaming macro QS tile -->
     <Preference
         android:key="gaming_mode_tile"
