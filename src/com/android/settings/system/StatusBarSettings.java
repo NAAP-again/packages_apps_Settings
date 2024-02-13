@@ -68,6 +68,7 @@ public class StatusBarSettings extends DashboardFragment implements
     private static final String LOCATION_INDICATOR_KEY = "location_indicators_enabled";
     private static final String CAMERA_MIC_INDICATOR_KEY = "camera_mic_icons_enabled";
     private static final String KEY_SHOW_FOURG = "show_fourg_icon";
+    private static final String KEY_DATA_DISABLED = "data_disabled_icon";
 
     private SystemSettingMasterSwitchPreference mNetTrafficState;
     private SystemSettingListPreference mClockPosition;
@@ -78,6 +79,7 @@ public class StatusBarSettings extends DashboardFragment implements
     private SwitchPreferenceCompat mLocationIndicator;
     private SwitchPreferenceCompat mCameraMicIndicator;
     private SystemSettingSwitchPreference mShowFourg;
+    private SystemSettingSwitchPreference mDataDisabled;
 
     @Override
     protected int getPreferenceScreenResId() {
@@ -142,9 +144,11 @@ public class StatusBarSettings extends DashboardFragment implements
         mCameraMicIndicator.setChecked(enabled);
         mCameraMicIndicator.setOnPreferenceChangeListener(this);
 
-        mShowFourg = findPreference(KEY_SHOW_FOURG);
         enabled = Utils.isVoiceCapable(getActivity());
+        mShowFourg = findPreference(KEY_SHOW_FOURG);
         mShowFourg.setEnabled(enabled);
+        mDataDisabled = findPreference(KEY_DATA_DISABLED);
+        mDataDisabled.setEnabled(enabled);
 
     }
 
