@@ -54,7 +54,7 @@
     <string name="prevent_ringing_option_normal">Normal</string>
 
     <!-- OTA App -->
-    <string name="update_settings_title">YAAP Updater</string>
+    <string name="update_settings_title">NAAP Updater</string>
     <string name="update_settings_summary">Check for the latest version of the rom</string>
     <string name="update_package" translatable="false">eu.chainfire.opendelta</string>
     <string name="update_activity" translatable="false">eu.chainfire.opendelta.MainActivity</string>
@@ -62,8 +62,8 @@
     <!-- Radio Diagnostics -->
     <string name="radio_info_title">Radio diagnostics</string>
 
-    <!-- YAAP Version -->
-    <string name="yaap_version">YAAP Build</string>
+    <!-- NAAP Version -->
+    <string name="yaap_version">NAAP Build</string>
 
     <!-- QSTile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">Secure QS tiles require unlocking</string>
@@ -361,9 +361,9 @@
     <!-- ETC category -->
     <string name="etc_category_title">ETC</string>
 
-    <!-- About YAAP -->
-    <string name="about_yaap_title">About YAAP</string>
-    <string name="about_yaap_summary">our team, source, telegram group and more</string>
+    <!-- About NAAP -->
+    <string name="about_naap_title">About NAAP</string>
+    <string name="about_naap_summary">our team, source, telegram group and more</string>
 
     <!-- YASP Import -->
 
@@ -413,7 +413,7 @@
     <!-- QS footer text -->
     <string name="qs_footer_text_show_title">Show QS footer text</string>
     <string name="qs_footer_text_string_title">Customize footer text</string>
-    <string name="qs_footer_text_string_summary">Set to empty for default YAAP</string>
+    <string name="qs_footer_text_string_summary">Set to empty for default NAAP</string>
 
     <!-- About -->
     <string name="about_title">About</string>
@@ -439,7 +439,7 @@
     <string name="about_tg_link" translatable="false">https://t.me/yaapcommon</string>
     <string name="about_git_title">Source Code</string>
     <string name="about_git_summary">View our source on GitHub</string>
-    <string name="about_git_link" translatable="false">https://github.com/yaap</string>
+    <string name="about_git_link" translatable="false">https://github.com/naap-again</string>
     <string name="about_phone_title">About Phone</string>
     <string name="about_phone_summary">Open the system\'s about page</string>
     <string name="designer_title">Designer</string>

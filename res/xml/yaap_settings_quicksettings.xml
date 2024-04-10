@@ -46,7 +46,7 @@
         android:title="@string/qs_footer_text_string_title"
         android:summary="@string/qs_footer_text_string_summary"
         android:dependency="qs_footer_text_show"
-        android:defaultValue="YAAP" />
+        android:defaultValue="NAAP" />
 
     <!-- Media player in QS -->
     <com.yasp.settings.preferences.GlobalSettingSwitchPreference
