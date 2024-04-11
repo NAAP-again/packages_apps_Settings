@@ -138,6 +138,7 @@ import com.android.settings.location.WifiScanningFragment;
 import com.android.settings.network.MobileNetworkListFragment;
 import com.android.settings.network.NetworkDashboardFragment;
 import com.android.settings.network.NetworkProviderSettings;
+import com.android.settings.network.PrivateDnsSettings;
 import com.android.settings.network.apn.ApnEditor;
 import com.android.settings.network.apn.ApnSettings;
 import com.android.settings.network.telephony.MobileNetworkSettings;
@@ -193,7 +194,7 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2;
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
-import com.yasp.settings.YaapSettings;
+import com.nasp.settings.NaapSettings;
 import ink.kscope.settings.wifi.tether.WifiTetherClientManager;
 
 public class SettingsGateway {
@@ -379,7 +380,8 @@ public class SettingsGateway {
             WirelessDebuggingFragment.class.getName(),
             BatterySaverAdvancedSettings.class.getName(),
             VolumeSteps.class.getName(),
-            YaapSettings.class.getName()
+            NaapSettings.class.getName(),
+            PrivateDnsSettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -426,10 +428,11 @@ public class SettingsGateway {
             UserBackupSettingsActivity.class.getName(),
             Settings.MemtagPageActivity.class.getName(),
             Settings.NavigationModeSettingsActivity.class.getName(),
-            // Others (YAAP Additions)
+            // Others (NAAP Additions)
             Settings.GamingModeActivity.class.getName(),
-            Settings.YAAPSettingsActivity.class.getName(),
+            Settings.NAAPSettingsActivity.class.getName(),
             Settings.PreviouslyConnectedDeviceDashboardActivity.class.getName(),
             Settings.WirelessDebuggingActivity.class.getName(),
+            Settings.PrivateDnsSettingsActivity.class.getName(),
     };
 }
