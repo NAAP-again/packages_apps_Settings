@@ -486,7 +486,7 @@ public class Settings extends SettingsActivity {
 
     public static class PrivateDnsSettingsActivity extends SettingsActivity { /* empty */ }
 
-    public static class YAAPSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class NAAPSettingsActivity extends SettingsActivity { /* empty */ }
 
     public static class GamingModeActivity extends SettingsActivity { /* empty */ }
 

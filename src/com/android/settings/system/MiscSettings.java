@@ -105,7 +105,7 @@ public class MiscSettings extends DashboardFragment implements
 
     @Override
     protected int getPreferenceScreenResId() {
-        return R.xml.yaap_settings_misc;
+        return R.xml.naap_settings_misc;
     }
 
     @Override
@@ -125,5 +125,5 @@ public class MiscSettings extends DashboardFragment implements
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.yaap_settings_misc);
+            new BaseSearchIndexProvider(R.xml.naap_settings_misc);
 }

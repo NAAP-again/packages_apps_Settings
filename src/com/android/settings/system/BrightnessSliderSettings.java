@@ -28,7 +28,7 @@ public class BrightnessSliderSettings extends DashboardFragment {
 
     @Override
     protected int getPreferenceScreenResId() {
-        return R.xml.yaap_settings_brightness_slider;
+        return R.xml.naap_settings_brightness_slider;
     }
 
     @Override
@@ -42,5 +42,5 @@ public class BrightnessSliderSettings extends DashboardFragment {
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.yaap_settings_brightness_slider);
+            new BaseSearchIndexProvider(R.xml.naap_settings_brightness_slider);
 }

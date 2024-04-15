@@ -49,7 +49,7 @@ public class AboutNaap extends DashboardFragment {
 
     @Override
     protected int getPreferenceScreenResId() {
-        return R.xml.yaap_settings_about;
+        return R.xml.naap_settings_about;
     }
 
     @Override
@@ -86,5 +86,5 @@ public class AboutNaap extends DashboardFragment {
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.yaap_settings_about);
+            new BaseSearchIndexProvider(R.xml.naap_settings_about);
 }

@@ -22,9 +22,9 @@
     settings:keywords="@string/keywords_android_version">
 
     <com.android.settingslib.widget.LayoutPreference
-        android:layout="@layout/yaap_logo_layout"
+        android:layout="@layout/naap_logo_layout"
         android:selectable="false"
-        android:key="yaap_logo"
+        android:key="naap_logo"
         settings:searchable="false" />
 
     <!-- Android version -->
@@ -68,14 +68,14 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
 
-    <!-- YAAP Version -->
+    <!-- NAAP Version -->
     <Preference
-        android:key="yaap_version"
-        android:title="@string/yaap_version"
+        android:key="naap_version"
+        android:title="@string/naap_version"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.YAAPVersionPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.NAAPVersionPreferenceController"/>
 
     <!-- Build -->
     <Preference

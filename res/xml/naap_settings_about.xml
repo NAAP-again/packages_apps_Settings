@@ -19,9 +19,9 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <com.android.settingslib.widget.LayoutPreference
-        android:layout="@layout/yaap_logo_layout"
+        android:layout="@layout/naap_logo_layout"
         android:selectable="false"
-        android:key="yaap_logo" />
+        android:key="naap_logo" />
 
     <PreferenceCategory
         android:key="about_team"

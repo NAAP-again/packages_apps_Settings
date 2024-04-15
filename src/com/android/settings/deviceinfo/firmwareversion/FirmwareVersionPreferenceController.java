@@ -16,7 +16,7 @@
 
 package com.android.settings.deviceinfo.firmwareversion;
 
-import static com.android.settings.deviceinfo.firmwareversion.YAAPVersionPreferenceController.YAAP_PROP;
+import static com.android.settings.deviceinfo.firmwareversion.NAAPVersionPreferenceController.NAAP_PROP;
 
 import android.content.Context;
 import android.os.Build;
@@ -41,7 +41,7 @@ public class FirmwareVersionPreferenceController extends BasePreferenceControlle
     public CharSequence getSummary() {
         String summary = Build.VERSION.RELEASE_OR_PREVIEW_DISPLAY;
         final String versionDef = mContext.getString(R.string.device_info_default);
-        final String romVersion = SystemProperties.get(YAAP_PROP, versionDef);
+        final String romVersion = SystemProperties.get(NAAP_PROP, versionDef);
         if (!romVersion.equals(versionDef)) {
             final String[] buildDate = romVersion.split("-", 0);
             summary += " - " + buildDate[buildDate.length - 1];

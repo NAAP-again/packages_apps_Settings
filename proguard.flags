@@ -17,7 +17,7 @@
     *;
 }
 
-# YaapSettings
+# NaapSettings
 -keep class com.yasp.settings.**
 
 # We want to keep methods in Activity that could be used in the XML attribute onClick.

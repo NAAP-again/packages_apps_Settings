@@ -54,7 +54,7 @@ public class QuickSettings extends DashboardFragment implements
 
     @Override
     protected int getPreferenceScreenResId() {
-        return R.xml.yaap_settings_quicksettings;
+        return R.xml.naap_settings_quicksettings;
     }
 
     @Override
@@ -78,9 +78,9 @@ public class QuickSettings extends DashboardFragment implements
         if (footerString != null && !footerString.isEmpty())
             mFooterString.setText(footerString);
         else {
-            mFooterString.setText("YAAP");
+            mFooterString.setText("NAAP");
             Settings.System.putString(resolver,
-                    Settings.System.QS_FOOTER_TEXT_STRING, "YAAP");
+                    Settings.System.QS_FOOTER_TEXT_STRING, "NAAP");
         }
     }
 
@@ -93,9 +93,9 @@ public class QuickSettings extends DashboardFragment implements
                 Settings.System.putString(resolver,
                         Settings.System.QS_FOOTER_TEXT_STRING, value);
             else {
-                mFooterString.setText("YAAP");
+                mFooterString.setText("NAAP");
                 Settings.System.putString(resolver,
-                        Settings.System.QS_FOOTER_TEXT_STRING, "YAAP");
+                        Settings.System.QS_FOOTER_TEXT_STRING, "NAAP");
             }
             return true;
         } else if (preference == mBrightnessSlider) {
@@ -118,5 +118,5 @@ public class QuickSettings extends DashboardFragment implements
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.yaap_settings_quicksettings);
+            new BaseSearchIndexProvider(R.xml.naap_settings_quicksettings);
 }

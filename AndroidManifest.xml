@@ -5083,10 +5083,10 @@
                 android:value="com.android.settings.development.WirelessDebuggingFragment"/>
         </activity>
 
-        <!-- YAAP Settings -->
+        <!-- NAAP Settings -->
         <activity android:name=".Settings$GamingModeActivity"
                   android:label="@string/gaming_mode_tile_title"
-                  android:icon="@drawable/ic_yaap_settings_icon"
+                  android:icon="@drawable/ic_naap_settings_icon"
                   android:exported="true">
             <intent-filter android:priority="69">
                 <action android:name="com.android.settings.GAMING_MODE_SETTINGS" />

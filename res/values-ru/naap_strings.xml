@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2023 YAAP
+<!-- Copyright (C) 2023 NAAP
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -54,14 +54,14 @@
     <string name="prevent_ringing_option_normal">Normal</string>
 
     <!-- OTA App -->
-    <string name="update_settings_title">Обновление YAAP</string>
+    <string name="update_settings_title">Обновление NAAP</string>
     <string name="update_settings_summary">Проверить доступные обновления прошивки</string>
 
     <!-- String for removal of sensitive info on about, depending on tap -->
     <string name="device_info_protected_single_press">Нажмите для отображения</string>
 
-    <!-- YAAP Version -->
-    <string name="yaap_version">Версия YAAP</string>
+    <!-- NAAP Version -->
+    <string name="naap_version">Версия NAAP</string>
 
     <!-- QSTile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">Важные плитки в шторке требуют разблокировки</string>
@@ -242,7 +242,7 @@
     <!-- YASP Import -->
 
     <!-- App Title -->
-    <string name="yaap_settings_title">Настройки YAAP</string>
+    <string name="naap_settings_title">Настройки NAAP</string>
 
     <!-- Categories -->
     <string name="button_title">Кнопки</string>
@@ -286,7 +286,7 @@
     <!-- QS footer text -->
     <string name="qs_footer_text_show_title">Отображать текст в нижнем колонтитуле быстрых настроек</string>
     <string name="qs_footer_text_string_title">Собственный текст в нижнем колонтитуле быстрых настроек</string>
-    <string name="qs_footer_text_string_summary">Оставьте пустым для стандартного текста YAAP</string>
+    <string name="qs_footer_text_string_summary">Оставьте пустым для стандартного текста NAAP</string>
 
     <!-- About -->
     <string name="about_title">О нас</string>
