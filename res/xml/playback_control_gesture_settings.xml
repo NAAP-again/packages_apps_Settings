@@ -32,7 +32,7 @@
         android:key="gesture_playback_control_category"
         android:title="@string/gesture_playback_control_title" />
 
-    <com.yasp.settings.preferences.CustomSeekBarPreference
+    <com.nasp.settings.preferences.CustomSeekBarPreference
         android:key="volume_button_music_control_delay"
         android:title="@string/volume_rocker_music_controls_delay_title"
         android:defaultValue="500"

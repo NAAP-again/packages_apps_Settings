@@ -106,7 +106,7 @@ public class PlaybackControlParentPreferenceController extends TogglePreferenceC
 
     @Override
     public int getSliceHighlightMenuRes() {
-        return R.string.menu_key_yasp;
+        return R.string.menu_key_nasp;
     }
 
     private class SettingObserver extends ContentObserver {

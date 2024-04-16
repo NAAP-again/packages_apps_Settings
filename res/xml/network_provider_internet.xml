@@ -64,7 +64,7 @@
         settings:controller="com.android.settings.network.AirplaneModePreferenceController"
         settings:userRestriction="no_airplane_mode"/>
 
-    <com.yasp.settings.preferences.GlobalSettingSwitchPreference
+    <com.nasp.settings.preferences.GlobalSettingSwitchPreference
         android:key="apm_enhancement_enabled"
         android:title="@string/apm_enhancement_title"
         android:summaryOn="@string/apm_enhancement_summary_on"

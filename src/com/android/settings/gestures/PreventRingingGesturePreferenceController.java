@@ -16,10 +16,10 @@
 
 package com.android.settings.gestures;
 
-import static android.provider.Settings.Secure.YAAP_VOLUME_HUSH_OFF;
-import static android.provider.Settings.Secure.YAAP_VOLUME_HUSH_MUTE;
-import static android.provider.Settings.Secure.YAAP_VOLUME_HUSH_NORMAL;
-import static android.provider.Settings.Secure.YAAP_VOLUME_HUSH_VIBRATE;
+import static android.provider.Settings.Secure.NAAP_VOLUME_HUSH_OFF;
+import static android.provider.Settings.Secure.NAAP_VOLUME_HUSH_MUTE;
+import static android.provider.Settings.Secure.NAAP_VOLUME_HUSH_NORMAL;
+import static android.provider.Settings.Secure.NAAP_VOLUME_HUSH_VIBRATE;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -117,20 +117,20 @@ public class PreventRingingGesturePreferenceController extends AbstractPreferenc
         final String preventRingingSetting = keyToSetting(preference.getKey());
         String settingsValue = Settings.Secure.getString(
                 mContext.getContentResolver(), Settings.Secure.VOLUME_HUSH_GESTURE);
-        if (settingsValue == null) settingsValue = YAAP_VOLUME_HUSH_OFF;
+        if (settingsValue == null) settingsValue = NAAP_VOLUME_HUSH_OFF;
         ArrayList<String> currentValue = new ArrayList<String>();
         currentValue.addAll(Arrays.asList(settingsValue.split(",", 0)));
 
         if (isAdd) {
-            if (currentValue.get(0).equals(YAAP_VOLUME_HUSH_OFF))
+            if (currentValue.get(0).equals(NAAP_VOLUME_HUSH_OFF))
                 currentValue.clear();
             if (!currentValue.contains(preventRingingSetting))
                 currentValue.add(preventRingingSetting);
         } else {
             if (currentValue.size() == 1 ||
-                    preventRingingSetting.equals(YAAP_VOLUME_HUSH_OFF)) {
+                    preventRingingSetting.equals(NAAP_VOLUME_HUSH_OFF)) {
                 currentValue.clear();
-                currentValue.add(YAAP_VOLUME_HUSH_OFF);
+                currentValue.add(NAAP_VOLUME_HUSH_OFF);
                 if (mMasterSwitch != null) mMasterSwitch.setChecked(false);
             } else {
                 currentValue.remove(preventRingingSetting);
@@ -158,14 +158,14 @@ public class PreventRingingGesturePreferenceController extends AbstractPreferenc
                 mContext.getContentResolver(), Settings.Secure.VOLUME_HUSH_GESTURE);
 
         final boolean enabled = preventRingingSetting != null &&
-                !preventRingingSetting.equals(YAAP_VOLUME_HUSH_OFF);
+                !preventRingingSetting.equals(NAAP_VOLUME_HUSH_OFF);
         if (mVibratePref != null) mVibratePref.setEnabled(enabled);
         if (mMutePref != null) mMutePref.setEnabled(enabled);
         if (mNormalPref != null) mNormalPref.setEnabled(enabled);
 
-        final boolean isVibrate = enabled && preventRingingSetting.contains(YAAP_VOLUME_HUSH_VIBRATE);
-        final boolean isMute = enabled && preventRingingSetting.contains(YAAP_VOLUME_HUSH_MUTE);
-        final boolean isNormal = enabled && preventRingingSetting.contains(YAAP_VOLUME_HUSH_NORMAL);
+        final boolean isVibrate = enabled && preventRingingSetting.contains(NAAP_VOLUME_HUSH_VIBRATE);
+        final boolean isMute = enabled && preventRingingSetting.contains(NAAP_VOLUME_HUSH_MUTE);
+        final boolean isNormal = enabled && preventRingingSetting.contains(NAAP_VOLUME_HUSH_NORMAL);
         if (mVibratePref != null && mVibratePref.isChecked() != isVibrate)
             mVibratePref.setChecked(isVibrate);
         if (mMutePref != null && mMutePref.isChecked() != isMute)
@@ -192,13 +192,13 @@ public class PreventRingingGesturePreferenceController extends AbstractPreferenc
     private String keyToSetting(String key) {
         switch (key) {
             case KEY_MUTE:
-                return YAAP_VOLUME_HUSH_MUTE;
+                return NAAP_VOLUME_HUSH_MUTE;
             case KEY_VIBRATE:
-                return YAAP_VOLUME_HUSH_VIBRATE;
+                return NAAP_VOLUME_HUSH_VIBRATE;
             case KEY_NORMAL:
-                return YAAP_VOLUME_HUSH_NORMAL;
+                return NAAP_VOLUME_HUSH_NORMAL;
             default:
-                return YAAP_VOLUME_HUSH_OFF;
+                return NAAP_VOLUME_HUSH_OFF;
         }
     }
 

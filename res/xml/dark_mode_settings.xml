@@ -62,8 +62,8 @@
         settings:searchable="false"
         settings:controller="com.android.settings.display.darkmode.DarkModeCustomBedtimePreferenceController" />
 
-    <com.yasp.settings.preferences.OverlaySwitchPreference
-        android:key="com.android.yaap.dark_bg"
+    <com.nasp.settings.preferences.OverlaySwitchPreference
+        android:key="com.android.naap.dark_bg"
         settings:dkey="android:neutral"
         settings:dkeyNightOnly="true"
         android:title="@string/black_bg_title"

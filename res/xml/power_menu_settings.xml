@@ -27,7 +27,7 @@
         settings:controller="com.android.settings.gestures.LongPressPowerIllustrationPreferenceController"/>
 
     <!-- Torch gesture -->
-    <com.yasp.settings.preferences.SystemSettingListPreference
+    <com.nasp.settings.preferences.SystemSettingListPreference
         android:key="torch_power_button_gesture"
         android:dialogTitle="@string/torch_power_button_gesture_title"
         android:title="@string/torch_power_button_gesture_title"

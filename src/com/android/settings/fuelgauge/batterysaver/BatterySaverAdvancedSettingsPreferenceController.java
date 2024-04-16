@@ -26,7 +26,7 @@ import androidx.preference.SwitchPreferenceCompat;
 import com.android.settings.R;
 import com.android.settingslib.core.AbstractPreferenceController;
 
-import com.yasp.settings.preferences.CustomSeekBarPreference;
+import com.nasp.settings.preferences.CustomSeekBarPreference;
 
 import java.lang.StringBuilder;
 import java.util.ArrayList;

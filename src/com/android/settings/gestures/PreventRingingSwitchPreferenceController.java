@@ -62,11 +62,11 @@ public class PreventRingingSwitchPreferenceController extends AbstractPreference
                     String preventRinging = Settings.Secure.getString(mContext.getContentResolver(),
                             Settings.Secure.VOLUME_HUSH_GESTURE);
                     boolean isChecked = preventRinging != null &&
-                            !preventRinging.equals(Settings.Secure.YAAP_VOLUME_HUSH_OFF);
+                            !preventRinging.equals(Settings.Secure.NAAP_VOLUME_HUSH_OFF);
                     Settings.Secure.putString(mContext.getContentResolver(),
                             Settings.Secure.VOLUME_HUSH_GESTURE, isChecked
-                                    ? Settings.Secure.YAAP_VOLUME_HUSH_OFF
-                                    : Settings.Secure.YAAP_VOLUME_HUSH_VIBRATE);
+                                    ? Settings.Secure.NAAP_VOLUME_HUSH_OFF
+                                    : Settings.Secure.NAAP_VOLUME_HUSH_VIBRATE);
                     return true;
                 });
                 mSwitch = (MainSwitchPreference) pref;
@@ -88,7 +88,7 @@ public class PreventRingingSwitchPreferenceController extends AbstractPreference
         String preventRingingSetting = Settings.Secure.getString(mContext.getContentResolver(),
                 Settings.Secure.VOLUME_HUSH_GESTURE);
         setChecked(preventRingingSetting != null &&
-                !preventRingingSetting.equals(Settings.Secure.YAAP_VOLUME_HUSH_OFF));
+                !preventRingingSetting.equals(Settings.Secure.NAAP_VOLUME_HUSH_OFF));
     }
 
     @Override
@@ -103,12 +103,12 @@ public class PreventRingingSwitchPreferenceController extends AbstractPreference
                 Settings.Secure.VOLUME_HUSH_GESTURE);
         final String newRingingSetting =
                 preventRingingSetting == null ||
-                preventRingingSetting.equals(Settings.Secure.YAAP_VOLUME_HUSH_OFF)
-                ? Settings.Secure.YAAP_VOLUME_HUSH_VIBRATE
+                preventRingingSetting.equals(Settings.Secure.NAAP_VOLUME_HUSH_OFF)
+                ? Settings.Secure.NAAP_VOLUME_HUSH_VIBRATE
                 : preventRingingSetting;
 
         if ((preventRingingSetting == null
-                || preventRingingSetting.equals(Settings.Secure.YAAP_VOLUME_HUSH_OFF))
+                || preventRingingSetting.equals(Settings.Secure.NAAP_VOLUME_HUSH_OFF))
                 && mVibratePref != null) {
             mVibratePref.setChecked(true);
         }
@@ -116,6 +116,6 @@ public class PreventRingingSwitchPreferenceController extends AbstractPreference
         Settings.Secure.putString(mContext.getContentResolver(),
                 Settings.Secure.VOLUME_HUSH_GESTURE, isChecked
                         ? newRingingSetting
-                        : Settings.Secure.YAAP_VOLUME_HUSH_OFF);
+                        : Settings.Secure.NAAP_VOLUME_HUSH_OFF);
     }
 }

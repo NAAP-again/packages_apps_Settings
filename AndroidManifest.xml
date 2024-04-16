@@ -5083,14 +5083,14 @@
                 android:value="com.android.settings.development.WirelessDebuggingFragment"/>
         </activity>
 
-        <!-- YAAP Settings -->
-        <activity android:name=".Settings$YAAPSettingsActivity"
-            android:label="@string/yaap_settings_title"
-            android:icon="@drawable/ic_yaap_settings_icon"
+        <!-- NAAP Settings -->
+        <activity android:name=".Settings$NAAPSettingsActivity"
+            android:label="@string/naap_settings_title"
+            android:icon="@drawable/ic_naap_settings_icon"
             android:parentActivityName="com.android.settings"
             android:exported="true">
             <intent-filter android:priority="69">
-                <action android:name="com.android.settings.YAAP_SETTINGS" />
+                <action android:name="com.android.settings.NAAP_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <intent-filter>
@@ -5098,14 +5098,14 @@
                 <category android:name="com.android.settings.SHORTCUT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.yasp.settings.YaapSettings" />
+                android:value="com.nasp.settings.NaapSettings" />
             <meta-data android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
-                android:value="@string/menu_key_yasp"/>
+                android:value="@string/menu_key_nasp"/>
         </activity>
 
         <activity android:name=".Settings$GamingModeActivity"
                   android:label="@string/gaming_mode_tile_title"
-                  android:icon="@drawable/ic_yaap_settings_icon"
+                  android:icon="@drawable/ic_naap_settings_icon"
                   android:exported="true">
             <intent-filter android:priority="69">
                 <action android:name="com.android.settings.GAMING_MODE_SETTINGS" />

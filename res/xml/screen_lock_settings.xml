@@ -53,7 +53,7 @@
         android:title="@string/lockpattern_settings_enable_power_button_instantly_locks" />
 
     <!-- Always available -->
-    <com.yasp.settings.preferences.SecureSettingSwitchPreference
+    <com.nasp.settings.preferences.SecureSettingSwitchPreference
         android:key="qstile_requires_unlocking"
         android:title="@string/qstile_requires_unlocking_title"
         android:summary="@string/qstile_requires_unlocking_summary"

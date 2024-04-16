@@ -101,7 +101,7 @@
             settings:controller="com.android.settings.display.AmbientDisplayAlwaysOnPreferenceController"
             settings:userRestriction="no_ambient_display" />
 
-        <com.yasp.settings.preferences.SecureSettingSwitchPreference
+        <com.nasp.settings.preferences.SecureSettingSwitchPreference
             android:key="doze_on_charge"
             android:defaultValue="false"
             android:title="@string/doze_on_charge_title"
@@ -148,7 +148,7 @@
             settings:controller="com.android.settings.display.AmbientDisplayNotificationsPreferenceController" />
 
         <!-- Controls wake for notifications -->
-        <com.yasp.settings.preferences.SecureSettingSwitchPreference
+        <com.nasp.settings.preferences.SecureSettingSwitchPreference
             android:key="doze_for_notifications"
             android:title="@string/doze_title"
             android:summary="@string/doze_summary"

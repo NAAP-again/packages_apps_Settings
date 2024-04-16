@@ -24,8 +24,8 @@ import androidx.preference.PreferenceScreen;
 
 import com.android.settingslib.core.AbstractPreferenceController;
 
-import com.yasp.settings.preferences.CustomSeekBarPreference;
-import com.yasp.settings.preferences.SystemSettingListPreference;
+import com.nasp.settings.preferences.CustomSeekBarPreference;
+import com.nasp.settings.preferences.SystemSettingListPreference;
 
 public class GamingModeController extends AbstractPreferenceController
         implements Preference.OnPreferenceChangeListener {

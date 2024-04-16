@@ -17,10 +17,10 @@
 package com.android.settings.gestures;
 
 import static android.provider.Settings.Secure.VOLUME_HUSH_GESTURE;
-import static android.provider.Settings.Secure.YAAP_VOLUME_HUSH_MUTE;
-import static android.provider.Settings.Secure.YAAP_VOLUME_HUSH_NORMAL;
-import static android.provider.Settings.Secure.YAAP_VOLUME_HUSH_OFF;
-import static android.provider.Settings.Secure.YAAP_VOLUME_HUSH_VIBRATE;
+import static android.provider.Settings.Secure.NAAP_VOLUME_HUSH_MUTE;
+import static android.provider.Settings.Secure.NAAP_VOLUME_HUSH_NORMAL;
+import static android.provider.Settings.Secure.NAAP_VOLUME_HUSH_OFF;
+import static android.provider.Settings.Secure.NAAP_VOLUME_HUSH_VIBRATE;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -76,23 +76,23 @@ public class PreventRingingParentPreferenceController extends TogglePreferenceCo
 
         String preventRinging = Settings.Secure.getString(
                 mContext.getContentResolver(), VOLUME_HUSH_GESTURE);
-        if (preventRinging == null) preventRinging = YAAP_VOLUME_HUSH_OFF;
-        return !preventRinging.equals(YAAP_VOLUME_HUSH_OFF);
+        if (preventRinging == null) preventRinging = NAAP_VOLUME_HUSH_OFF;
+        return !preventRinging.equals(NAAP_VOLUME_HUSH_OFF);
     }
 
     @Override
     public boolean setChecked(boolean isChecked) {
         String preventRingingSetting = Settings.Secure.getString(
                 mContext.getContentResolver(), VOLUME_HUSH_GESTURE);
-        if (preventRingingSetting == null) preventRingingSetting = YAAP_VOLUME_HUSH_OFF;
+        if (preventRingingSetting == null) preventRingingSetting = NAAP_VOLUME_HUSH_OFF;
 
-        final String newRingingSetting = preventRingingSetting.equals(YAAP_VOLUME_HUSH_OFF)
-                ? YAAP_VOLUME_HUSH_VIBRATE : preventRingingSetting;
+        final String newRingingSetting = preventRingingSetting.equals(NAAP_VOLUME_HUSH_OFF)
+                ? NAAP_VOLUME_HUSH_VIBRATE : preventRingingSetting;
 
         return Settings.Secure.putString(mContext.getContentResolver(),
                 VOLUME_HUSH_GESTURE, isChecked
                         ? newRingingSetting
-                        : YAAP_VOLUME_HUSH_OFF);
+                        : NAAP_VOLUME_HUSH_OFF);
     }
 
     @Override
@@ -100,11 +100,11 @@ public class PreventRingingParentPreferenceController extends TogglePreferenceCo
         super.updateState(preference);
         String value = Settings.Secure.getString(
                 mContext.getContentResolver(), SECURE_KEY);
-        if (value == null) value = YAAP_VOLUME_HUSH_OFF;
+        if (value == null) value = NAAP_VOLUME_HUSH_OFF;
         StringBuilder summary = new StringBuilder(
                 mContext.getString(R.string.switch_off_text));
         if (isVolumePowerKeyChordSetToHush()) {
-            if (!value.equals(YAAP_VOLUME_HUSH_OFF)) {
+            if (!value.equals(NAAP_VOLUME_HUSH_OFF)) {
                 ArrayList<String> values =
                         new ArrayList<>(Arrays.asList(value.split(",", 0)));
                 if (!values.isEmpty()) {
@@ -217,12 +217,12 @@ public class PreventRingingParentPreferenceController extends TogglePreferenceCo
 
     private String getStringForMode(String mode) {
         switch (mode) {
-            case YAAP_VOLUME_HUSH_VIBRATE:
+            case NAAP_VOLUME_HUSH_VIBRATE:
                 return mContext.getText(R.string.prevent_ringing_option_vibrate).toString();
-            case YAAP_VOLUME_HUSH_MUTE:
+            case NAAP_VOLUME_HUSH_MUTE:
                 return mContext.getText(R.string.prevent_ringing_option_mute).toString();
         }
-        // YAAP_VOLUME_HUSH_NORMAL
+        // NAAP_VOLUME_HUSH_NORMAL
         return mContext.getText(R.string.prevent_ringing_option_normal).toString();
     }
 }

@@ -33,7 +33,7 @@
         android:title="@string/auto_rotate_settings_primary_switch_title"
         settings:controller="com.android.settings.display.AutoRotatePreferenceController"/>
 
-    <com.yasp.settings.preferences.SystemSettingSwitchPreference
+    <com.nasp.settings.preferences.SystemSettingSwitchPreference
         android:key="enable_floating_rotation_button"
         android:title="@string/enable_floating_rotation_button_title"
         android:defaultValue="true" />

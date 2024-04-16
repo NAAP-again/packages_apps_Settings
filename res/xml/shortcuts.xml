@@ -38,12 +38,12 @@
         <intent android:action="android.intent.action.POWER_USAGE_SUMMARY" />
     </shortcut>
     <shortcut
-        android:shortcutId="manifest-shortcut-a-yaap"
-        android:icon="@drawable/ic_shortcut_yaap_settings_icon"
-        android:shortcutShortLabel="@string/yaap_settings_title" >
+        android:shortcutId="manifest-shortcut-a-naap"
+        android:icon="@drawable/ic_shortcut_naap_settings_icon"
+        android:shortcutShortLabel="@string/naap_settings_title" >
         <intent
             android:action="android.intent.action.MAIN"
             android:targetPackage="com.android.settings"
-            android:targetClass="com.android.settings.Settings$YAAPSettingsActivity" />
+            android:targetClass="com.android.settings.Settings$NAAPSettingsActivity" />
     </shortcut>
 </shortcuts>

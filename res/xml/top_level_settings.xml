@@ -51,13 +51,13 @@
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
 
     <com.android.settings.widget.HomepagePreference
-        android:key="top_level_yaap_settings"
-        android:title="@string/yaap_settings_title"
-        android:summary="@string/yaap_settings_summary"
-        android:icon="@drawable/ic_yaap_settings_icon"
+        android:key="top_level_naap_settings"
+        android:title="@string/naap_settings_title"
+        android:summary="@string/naap_settings_summary"
+        android:icon="@drawable/ic_naap_settings_icon"
         android:order="-135"
-        android:fragment="com.yasp.settings.YaapSettings"
-        settings:highlightableMenuKey="@string/menu_key_yasp" />
+        android:fragment="com.nasp.settings.NaapSettings"
+        settings:highlightableMenuKey="@string/menu_key_nasp" />
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.applications.AppDashboardFragment"
