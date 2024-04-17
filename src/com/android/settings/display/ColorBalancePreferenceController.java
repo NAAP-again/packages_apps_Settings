@@ -23,7 +23,7 @@ import android.text.TextUtils;
 import androidx.preference.PreferenceScreen;
 
 import com.android.settings.core.SliderPreferenceController;
-import com.yasp.settings.preferences.CustomSeekBarPreference;
+import com.nasp.settings.preferences.CustomSeekBarPreference;
 
 public class ColorBalancePreferenceController extends SliderPreferenceController {
 

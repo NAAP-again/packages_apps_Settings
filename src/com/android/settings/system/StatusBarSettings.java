@@ -42,10 +42,10 @@ import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.yasp.settings.preferences.SecureSettingSwitchPreference;
-import com.yasp.settings.preferences.SystemSettingListPreference;
-import com.yasp.settings.preferences.SystemSettingMasterSwitchPreference;
-import com.yasp.settings.preferences.SystemSettingSwitchPreference;
+import com.nasp.settings.preferences.SecureSettingSwitchPreference;
+import com.nasp.settings.preferences.SystemSettingListPreference;
+import com.nasp.settings.preferences.SystemSettingMasterSwitchPreference;
+import com.nasp.settings.preferences.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -245,7 +245,7 @@ public class StatusBarSettings extends DashboardFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.YASP;
+        return MetricsProto.MetricsEvent.NASP;
     }
 
     @Override

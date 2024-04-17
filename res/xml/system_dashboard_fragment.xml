@@ -112,7 +112,7 @@
         android:fragment="com.android.settings.users.UserSettings"
         settings:controller="com.android.settings.users.MultiUserPreferenceController"/>
 
-    <!-- YASP QS -->
+    <!-- NASP QS -->
     <Preference
         android:key="qs_settings"
         android:title="@string/quicksettings_title"
@@ -120,7 +120,7 @@
         android:order="-43"
         android:fragment="com.android.settings.system.QuickSettings"/>
 
-    <!-- YASP Statusbar -->
+    <!-- NASP Statusbar -->
     <Preference
         android:key="status_bar_settings"
         android:title="@string/statusbar_title"
@@ -128,7 +128,7 @@
         android:order="-44"
         android:fragment="com.android.settings.system.StatusBarSettings"/>
 
-    <!-- YASP Misc -->
+    <!-- NASP Misc -->
     <Preference
         android:key="misc_category"
         android:order="-42"

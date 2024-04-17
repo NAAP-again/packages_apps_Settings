@@ -23,7 +23,7 @@ import androidx.preference.PreferenceScreen;
 import com.android.settings.R;
 import com.android.settingslib.core.AbstractPreferenceController;
 
-import com.yasp.settings.preferences.CustomSeekBarPreference;
+import com.nasp.settings.preferences.CustomSeekBarPreference;
 
 /**
  * A simple preference controller for volume dialog timeout

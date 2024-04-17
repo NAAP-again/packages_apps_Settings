@@ -46,10 +46,10 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.yasp.settings.preferences.CustomSeekBarPreference;
-import com.yasp.settings.preferences.SystemSettingListPreference;
-import com.yasp.settings.preferences.SystemSettingSwitchPreference;
-import com.yasp.settings.Utils;
+import com.nasp.settings.preferences.CustomSeekBarPreference;
+import com.nasp.settings.preferences.SystemSettingListPreference;
+import com.nasp.settings.preferences.SystemSettingSwitchPreference;
+import com.nasp.settings.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -68,7 +68,7 @@ public class ConfigureNotificationSettings extends DashboardFragment implements
     private static final String SELECTED_PREFERENCE_KEY = "selected_preference";
     private static final String KEY_ADVANCED_CATEGORY = "configure_notifications_advanced";
 
-    // YASP Import
+    // NASP Import
     private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
     private static final String FLASH_ON_CALL_OPTIONS = "on_call_flashlight_category";
     private static final String PREF_FLASH_ON_CALL = "flashlight_on_call";
@@ -80,7 +80,7 @@ public class ConfigureNotificationSettings extends DashboardFragment implements
 
     private NotificationAssistantPreferenceController mNotificationAssistantPreferenceController;
 
-    // YASP Import
+    // NASP Import
     private SystemSettingListPreference mFlashOnCall;
     private SystemSettingSwitchPreference mFlashOnCallIgnoreDND;
     private CustomSeekBarPreference mFlashOnCallRate;
@@ -105,7 +105,7 @@ public class ConfigureNotificationSettings extends DashboardFragment implements
                 WORK_PROFILE_LOCK_SCREEN_REDACT_NOTIFICATION_SUMMARY,
                 R.string.lock_screen_notifs_redact_work_summary);
 
-        // YASP Import
+        // NASP Import
         PreferenceScreen prefScreen = getPreferenceScreen();
         final ContentResolver resolver = getActivity().getContentResolver();
 

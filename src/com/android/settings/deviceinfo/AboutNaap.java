@@ -77,7 +77,7 @@ public class AboutNaap extends DashboardFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.YASP;
+        return MetricsProto.MetricsEvent.NASP;
     }
 
     @Override

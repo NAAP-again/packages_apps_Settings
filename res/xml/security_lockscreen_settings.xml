@@ -45,8 +45,8 @@
             android:title="@string/owner_info_settings_title"
             android:summary="@string/owner_info_settings_summary" />
 
-        <!-- YASP lockscreen charging info -->
-        <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        <!-- NASP lockscreen charging info -->
+        <com.nasp.settings.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_battery_info"
             android:title="@string/lockscreen_battery_info_title"
             android:summary="@string/lockscreen_battery_info_summary"
@@ -108,13 +108,13 @@
             settings:controller="com.android.settings.display.AmbientDisplayAlwaysOnPreferenceController"
             settings:userRestriction="no_ambient_display" />
 
-        <com.yasp.settings.preferences.SecureSettingSwitchPreference
+        <com.nasp.settings.preferences.SecureSettingSwitchPreference
             android:key="doze_on_charge"
             android:defaultValue="false"
             android:title="@string/doze_on_charge_title"
             android:summary="@string/doze_on_charge_summary" />
 
-        <!-- YASP AOD Schedule -->
+        <!-- NASP AOD Schedule -->
         <Preference
             android:key="always_on_display_schedule"
             android:title="@string/always_on_display_schedule_title"
@@ -162,7 +162,7 @@
             settings:controller="com.android.settings.display.AmbientDisplayNotificationsPreferenceController" />
 
         <!-- Controls wake for notifications -->
-        <com.yasp.settings.preferences.SecureSettingSwitchPreference
+        <com.nasp.settings.preferences.SecureSettingSwitchPreference
             android:key="doze_for_notifications"
             android:title="@string/doze_title"
             android:summary="@string/doze_summary"
@@ -196,7 +196,7 @@
         android:order="1002"
         settings:searchable="false">
 
-        <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        <com.nasp.settings.preferences.SystemSettingSwitchPreference
             android:key="double_tap_sleep_lockscreen"
             android:title="@string/double_tap_sleep_lockscreen_title"
             android:summary="@string/double_tap_sleep_lockscreen_summary"

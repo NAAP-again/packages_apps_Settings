@@ -51,7 +51,7 @@ android_library {
         "SpaPrivilegedLib-defaults",
     ],
 
-    srcs: ["src/**/*.java", "src/**/*.kt", "YASP/src/**/*.java"],
+    srcs: ["src/**/*.java", "src/**/*.kt", "NASP/src/**/*.java"],
     exclude_srcs: [
         "src/com/android/settings/biometrics/fingerprint2/shared/**/*.kt",
     ],
@@ -60,7 +60,7 @@ android_library {
         "res",
         "res-export", // for external usage
         "res-product",
-        "YASP/res",
+        "NASP/res",
     ],
     static_libs: [
         // External dependencies

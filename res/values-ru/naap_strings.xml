@@ -239,7 +239,7 @@
     <string name="allow_access_to_obb_directory_title">Разрешить доступ к папке Android/obb</string>
     <string name="allow_access_to_obb_directory_summary">Требуется для установки некоторых больших приложений (в основном игр), которые используют файлы расширения OBB.</string>
 
-    <!-- YASP Import -->
+    <!-- NASP Import -->
 
     <!-- App Title -->
     <string name="naap_settings_title">Настройки NAAP</string>

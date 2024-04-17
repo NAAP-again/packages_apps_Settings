@@ -22,12 +22,12 @@
     <PreferenceCategory
         android:title="@string/display_settings">
 
-        <com.yasp.settings.preferences.GlobalSettingSwitchPreference
+        <com.nasp.settings.preferences.GlobalSettingSwitchPreference
             android:key="low_power_mode_hbm"
             android:title="@string/low_power_mode_hbm_title"
             android:defaultValue="true" />
 
-        <com.yasp.settings.preferences.GlobalSettingSwitchPreference
+        <com.nasp.settings.preferences.GlobalSettingSwitchPreference
             android:key="low_power_mode_dmd"
             android:title="@string/low_power_mode_dmd_title"
             android:defaultValue="true" />
@@ -37,7 +37,7 @@
             android:title="@string/enable_brightness_adjustment_tite"
             android:defaultValue="false" />
 
-        <com.yasp.settings.preferences.CustomSeekBarPreference
+        <com.nasp.settings.preferences.CustomSeekBarPreference
             android:key="adjust_brightness_factor"
             android:title="@string/adjust_brightness_factor_title"
             android:max="100"

@@ -35,8 +35,8 @@ import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.yasp.settings.preferences.SecureSettingMasterSwitchPreference;
-import com.yasp.settings.preferences.SystemSettingEditTextPreference;
+import com.nasp.settings.preferences.SecureSettingMasterSwitchPreference;
+import com.nasp.settings.preferences.SystemSettingEditTextPreference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -109,7 +109,7 @@ public class QuickSettings extends DashboardFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.YASP;
+        return MetricsProto.MetricsEvent.NASP;
     }
 
     @Override

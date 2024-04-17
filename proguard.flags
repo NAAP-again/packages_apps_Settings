@@ -18,7 +18,7 @@
 }
 
 # NaapSettings
--keep class com.yasp.settings.**
+-keep class com.nasp.settings.**
 
 # We want to keep methods in Activity that could be used in the XML attribute onClick.
 -keepclassmembers class com.android.settings*.** extends android.app.Activity {

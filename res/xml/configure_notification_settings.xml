@@ -148,8 +148,8 @@
                 android:targetClass="com.android.cellbroadcastreceiver.CellBroadcastSettings"/>
         </com.android.settingslib.RestrictedPreference>
 
-        <!-- YASP Notification headers -->
-        <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        <!-- NASP Notification headers -->
+        <com.nasp.settings.preferences.SystemSettingSwitchPreference
             android:key="notification_headers"
             android:order="21"
             android:title="@string/notification_headers_title"
@@ -198,12 +198,12 @@
             settings:controller="com.android.settings.notification.PoliteNotificationsPreferenceController" />
     </PreferenceCategory>
 
-    <!-- YASP Import -->
+    <!-- NASP Import -->
     <PreferenceCategory
         android:key="on_call_flashlight_category"
         android:title="@string/on_call_flashlight_category">
 
-        <com.yasp.settings.preferences.SystemSettingListPreference
+        <com.nasp.settings.preferences.SystemSettingListPreference
             android:key="flashlight_on_call"
             android:order="28"
             android:title="@string/flashlight_on_call_title"
@@ -211,14 +211,14 @@
             android:entryValues="@array/flashlight_on_call_values"
             android:defaultValue="0" />
 
-        <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        <com.nasp.settings.preferences.SystemSettingSwitchPreference
             android:key="flashlight_on_call_ignore_dnd"
             android:order="29"
             android:title="@string/flashlight_on_call_ignore_dnd_title"
             android:summary="@string/flashlight_on_call_ignore_dnd_summary"
             android:defaultValue="false" />
 
-        <com.yasp.settings.preferences.CustomSeekBarPreference
+        <com.nasp.settings.preferences.CustomSeekBarPreference
             android:key="flashlight_on_call_rate"
             android:order="30"
             android:title="@string/flashlight_on_call_rate_title"
@@ -230,24 +230,24 @@
 
     </PreferenceCategory>
 
-    <!-- YASP Import -->
+    <!-- NASP Import -->
     <PreferenceCategory
         android:key="incall_vib_options"
         android:title="@string/incall_vibration_category" >
 
-        <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        <com.nasp.settings.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
             android:order="31"
             android:title="@string/incall_vibrate_connect_title"
             android:defaultValue="false" />
 
-        <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        <com.nasp.settings.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_callwaiting"
             android:order="32"
             android:title="@string/incall_vibrate_call_wait_title"
             android:defaultValue="false" />
 
-        <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        <com.nasp.settings.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_disconnect"
             android:order="33"
             android:title="@string/incall_vibrate_disconnect_title"

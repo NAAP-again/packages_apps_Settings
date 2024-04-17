@@ -362,7 +362,7 @@
     <!-- Text shown for the description of the panic option -->
     <string name="panic_settings_summary">在电源菜单显示一个可激活紧急情况的选项</string>
 
-    <!-- YASP Import -->
+    <!-- NASP Import -->
 
     <!-- Categories -->
     <string name="button_title">按钮</string>

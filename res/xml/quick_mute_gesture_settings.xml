@@ -27,7 +27,7 @@
         android:key="volume_button_quick_mute_category"
         android:title="@string/volume_button_quick_mute_category_title" />
 
-    <com.yasp.settings.preferences.CustomSeekBarPreference
+    <com.nasp.settings.preferences.CustomSeekBarPreference
         android:key="volume_button_quick_mute_delay"
         android:title="@string/volume_button_quick_mute_delay_title"
         android:defaultValue="800"

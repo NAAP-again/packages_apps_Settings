@@ -97,7 +97,7 @@
         settings:controller="com.android.settings.gestures.PreventRingingParentPreferenceController" />
 
     <!-- Volume key cursor control  -->
-    <com.yasp.settings.preferences.SystemSettingListPreference
+    <com.nasp.settings.preferences.SystemSettingListPreference
         android:key="volume_key_cursor_control"
         android:title="@string/volume_key_cursor_control_title"
         android:summary="%s"

@@ -32,8 +32,8 @@ import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
-import com.yasp.settings.preferences.colorpicker.ColorPickerPreference;
-import com.yasp.settings.preferences.CustomSeekBarPreference;
+import com.nasp.settings.preferences.colorpicker.ColorPickerPreference;
+import com.nasp.settings.preferences.CustomSeekBarPreference;
 
 import java.lang.CharSequence;
 
@@ -347,7 +347,7 @@ public class MonetSettings extends DashboardFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.YASP;
+        return MetricsProto.MetricsEvent.NASP;
     }
 
     @Override

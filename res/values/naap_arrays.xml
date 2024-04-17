@@ -136,7 +136,7 @@
         <item>3600000</item>
     </string-array>
 
-    <!-- YASP Import -->
+    <!-- NASP Import -->
 
     <!-- Network traffic location -->
     <string-array name="network_traffic_location_entries" translatable="false">
