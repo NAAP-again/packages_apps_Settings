@@ -59,20 +59,6 @@ public class AboutNaap extends DashboardFragment {
         final Resources res = getResources();
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
-
-        Preference maintainerName = (Preference) findPreference(PREF_MAINTAINER);
-        if (maintainerName.getTitle().equals("")) {
-            maintainerName.setVisible(false);
-        } else if (res.getString(R.string.maintainer_telegram).equals("")) {
-            maintainerName.setEnabled(false);
-        }
-
-        Preference kernelName = (Preference) findPreference(PREF_KERNEL);
-        if (kernelName.getTitle().equals("")) {
-            kernelName.setVisible(false);
-        } else if (res.getString(R.string.kernel_telegram).equals("")) {
-            kernelName.setEnabled(false);
-        }
     }
 
     @Override
