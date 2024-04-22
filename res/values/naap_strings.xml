@@ -660,4 +660,10 @@
     <string name="custom_timeout_summary_2hours">2 hours</string>
     <string name="custom_timeout_summary_4hours">4 hours</string>
     <string name="custom_timeout_summary_8hours">8 hours</string>
+
+    <!-- QS WiFi / Bluetooth auto on -->
+    <string name="qs_wifi_auto_on_title">Automatic WiFi on</string>
+    <string name="qs_wifi_auto_on_summary">Always turn on WiFi when pressing the Internet QS tile</string>
+    <string name="qs_bt_auto_on_title">Automatic Bluetooth on</string>
+    <string name="qs_bt_auto_on_summary">Always turn on Bluetooth when pressing the Bluetooth QS tile</string>
 </resources>
