@@ -104,6 +104,7 @@ android_library {
         "settings-logtags",
         "settings-telephony-protos-lite",
         "statslog-settings",
+        "SurfaceFlingerProperties",
         "androidx.fragment_fragment",
         "androidx.fragment_fragment-ktx",
         "androidx.preference_preference-ktx",

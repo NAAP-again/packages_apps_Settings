@@ -71,7 +71,7 @@ class AppLockPackageConfigFragment : DashboardFragment() {
         AppLockHideAppPC(context, packageInfo.packageName, lifecycleScope)
     )
 
-    override fun getMetricsCategory(): Int = MetricsProto.MetricsEvent.CHERISH_SETTINGS
+    override fun getMetricsCategory(): Int = MetricsProto.MetricsEvent.NASP
 
     override protected fun getPreferenceScreenResId() = R.xml.app_lock_package_config_settings
 

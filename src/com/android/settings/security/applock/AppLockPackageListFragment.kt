@@ -55,7 +55,7 @@ class AppLockPackageListFragment : DashboardFragment() {
         super.onAttach(context)
         appLockManager = context.getSystemService(AppLockManager::class.java)!!
         pm = context.packageManager
-        launchablePackages = Utils.launchablePackages(context)
+        launchablePackages = NaapUtils.launchablePackages(context)
         whiteListedPackages = resources.getStringArray(
             com.android.internal.R.array.config_appLockAllowedSystemApps)
     }
@@ -140,7 +140,7 @@ class AppLockPackageListFragment : DashboardFragment() {
         }
     }
 
-    override fun getMetricsCategory(): Int = MetricsProto.MetricsEvent.CHERISH_SETTINGS
+    override fun getMetricsCategory(): Int = MetricsProto.MetricsEvent.NASP
 
     override protected fun getPreferenceScreenResId() = R.xml.app_lock_package_list_settings
 
