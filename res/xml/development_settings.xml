@@ -615,7 +615,7 @@
             android:summary="@string/usb_audio_disable_routing_summary" />
 
         <!-- Unlimit screenrecord -->
-        <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        <com.nasp.settings.preferences.SystemSettingSwitchPreference
             android:key="unlimit_screenrecord"
             android:title="@string/unlimit_screenrecord_title"
             android:summary="@string/unlimit_screenrecord_summary"
