@@ -44,7 +44,7 @@ public class FirmwareVersionPreferenceController extends BasePreferenceControlle
         final String romVersion = SystemProperties.get(NAAP_PROP, versionDef);
         if (!romVersion.equals(versionDef)) {
             final String[] buildDate = romVersion.split("-", 0);
-            summary += " - " + buildDate[buildDate.length - 1];
+            summary += " - " + buildDate[buildDate.length - 2];
         }
         final String patch = DeviceInfoUtils.getSecurityPatch();
         if (patch != null) summary += "\n" + patch;
