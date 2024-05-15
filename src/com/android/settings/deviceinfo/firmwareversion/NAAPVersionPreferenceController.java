@@ -25,7 +25,7 @@ import com.android.settings.core.BasePreferenceController;
 public class NAAPVersionPreferenceController extends BasePreferenceController {
 
     @VisibleForTesting
-    public static final String NAAP_PROP = "ro.naap.version";
+    private static final String NAAP_PROP = "ro.naap.version";
 
     public NAAPVersionPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
