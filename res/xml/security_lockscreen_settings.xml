@@ -123,7 +123,7 @@
             android:title="@string/lockscreen_weather_text_title"
             android:summary="@string/lockscreen_weather_text_summary" />
 
-        <com.yasp.settings.preferences.SystemSettingSwitchPreference
+        <com.nasp.settings.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_weather_click_updates"
             android:defaultValue="false"
             android:title="@string/lockscreen_weather_click_updates_title"
