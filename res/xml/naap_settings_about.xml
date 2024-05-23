@@ -37,6 +37,15 @@
         </Preference>
 
         <Preference
+            android:key="dev4_pref"
+            android:title="@string/about_dev4_name"
+            android:summary="@string/about_dev4_title">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/about_dev4_git"/>
+        </Preference>
+
+        <Preference
             android:key="dev2_pref"
             android:title="@string/about_dev2_name"
             android:summary="@string/about_dev2_title">

@@ -428,6 +428,9 @@
     <string name="about_dev3_title">Co-Lead</string>
     <string name="about_dev3_name">chematelegram</string>
     <string name="about_dev3_git" translatable="false">https://github.com/chematelegram</string>
+    <string name="about_dev4_title">Co-Lead</string>
+    <string name="about_dev4_name">Jennna-they-them</string>
+    <string name="about_dev4_git" translatable="false">https://github.com/Jennna-they-them</string>
     <string name="about_tg_title">Telegram Group</string>
     <string name="about_tg_summary">Official, Global Telegram Group</string>
     <string name="about_tg_link" translatable="false">https://t.me/tribualmi9</string>
@@ -437,7 +440,7 @@
     <string name="about_phone_title">About Phone</string>
     <string name="about_phone_summary">Open the system\'s about page</string>
     <string name="designer_title">Designer</string>
-    <string name="designer_name">sadly wen have none till now</string>
+    <string name="designer_name">sadly we have none till now... You can? Ping us!</string>
     <string name="designer_tg" translatable="false">https://t.me/tribual</string>
 
     <!-- Statusbar network traffic monitor -->
