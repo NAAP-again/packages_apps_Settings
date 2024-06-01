@@ -92,7 +92,7 @@
         <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS"/>
     </Preference> -->
 
-    <Preference
+    <!-- <Preference
         android:key="update_settings"
         android:title="@string/update_settings_title"
         android:summary="@string/update_settings_summary"
@@ -102,7 +102,7 @@
         <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="@string/update_package"
                 android:targetClass="@string/update_activity" />
-    </Preference>
+    </Preference> -->
 
     <Preference
         android:key="system_multiuser"
