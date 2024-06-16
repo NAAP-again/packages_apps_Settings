@@ -759,4 +759,8 @@
     <string name="clock_date_format">Date format</string>
     <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">Enter string</string>
+
+    <!-- Block wallpaper dimming -->
+    <string name="block_wallpaper_dimming_title">Ignore wallpaper dimming requests</string>
+    <string name="block_wallpaper_dimming_summary">Blocks all apps from setting the wallpaper dim\nForces dim to 0</string>
 </resources>
