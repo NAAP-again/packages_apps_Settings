@@ -58,12 +58,17 @@
     <string name="update_settings_summary">Check for the latest version of the rom</string>
     <string name="update_package" translatable="false">eu.chainfire.opendelta</string>
     <string name="update_activity" translatable="false">eu.chainfire.opendelta.MainActivity</string>
+    <string name="changelog_activity" translatable="false">eu.chainfire.opendelta.ChangelogActivity</string>
 
     <!-- Radio Diagnostics -->
     <string name="radio_info_title">Radio diagnostics</string>
 
     <!-- NAAP Version -->
     <string name="naap_version">NAAP Build</string>
+
+    <!-- YAAP Changelog -->
+    <string name="yaap_changelog_title">Changelog</string>
+    <string name="yaap_changelog_summary">View the changelogs of recent and current YAAP version</string>
 
     <!-- QSTile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">Secure QS tiles require unlocking</string>
@@ -115,8 +120,12 @@
     <string name="gaming_mode_night_light_summary">Whether to disable Night Light and schedule</string>
     <string name="gaming_mode_battery_schedule_title">Battery Saver</string>
     <string name="gaming_mode_battery_schedule_summary">Whether to disable battery saver and schedule</string>
+    <string name="gaming_mode_power_title">Power Mode</string>
+    <string name="gaming_mode_power_summary">Whether to enable gaming power profile</string>
     <string name="gaming_mode_bluetooth_title">Bluetooth</string>
     <string name="gaming_mode_bluetooth_summary">Whether to enable bluetooth</string>
+    <string name="gaming_mode_three_finger_title">Swipe to screenshot</string>
+    <string name="gaming_mode_three_finger_summary">Whether to disable three finger swipe to screenshot gesture</string>
     <string name="gaming_mode_extra_dim_title">Extra Dim</string>
     <string name="gaming_mode_extra_dim_summary">Whether to disable extra dim and schedule</string>
     <string name="gaming_mode_brightness_enabled_title">Auto Brightness</string>
@@ -127,8 +136,12 @@
     <string name="gaming_mode_media_enabled_summary">Whether to set media volume</string>
     <string name="gaming_mode_media_title">Set volume to</string>
     <string name="gaming_mode_desc">Gaming macro will toggle the settings you chose above. All of the toggled settings will be saved and toggled back once you disable Gaming Macro</string>
+    <string name="gaming_mode_desc_auto">If you want to automatically run this for an app go to that app info settings and enable the \"Gaming Macro\" toggle</string>
     <string name="gaming_mode_screen_off_title">Screen off deactivates</string>
     <string name="gaming_mode_screen_off_summary">Deactivate gaming macro when the screen turns off</string>
+    <string name="gaming_mode_battery_saver_disables_title">Battery Saver deactivates</string>
+    <string name="gaming_mode_battery_saver_disables_summary">Deactivate gaming macro when battery saver activates</string>
+    <string name="gaming_macro_switch_summary">Activate gaming macro for this app</string>
 
     <!-- 3-Button navigation settings -->
     <string name="button_settings_activity_title">3-Button Navigation Settings</string>
@@ -367,7 +380,7 @@
 
     <!-- About NAAP -->
     <string name="about_naap_title">About NAAP</string>
-    <string name="about_naap_summary">our team, source, telegram group and more</string>
+    <string name="about_naap_summary">Our team, source, telegram group and more</string>
 
     <!-- NASP Import -->
 
@@ -454,6 +467,9 @@
     <string name="traffic_statusbar">Statusbar</string>
     <string name="traffic_expanded_statusbar">Expanded QS header</string>
     <string name="network_traffic_autohide_threshold_title">Net activity autohide threshold</string>
+    <string name="network_traffic_limit_mb_title">Threshold in MB/s</string>
+    <string name="network_traffic_limit_mb_summary_on">Set the threshold in MB/s</string>
+    <string name="network_traffic_limit_mb_summary_off">Set the threshold in KB/s</string>
     <string name="network_traffic_arrow_title">Show arrows</string>
     <string name="network_traffic_arrow_summary">Show the network traffic indicator arrows</string>
     <string name="network_traffic_type">Select net activity type</string>
@@ -463,6 +479,8 @@
     <string name="show_network_traffic_down">Download</string>
     <string name="show_network_traffic_all">Both</string>
     <string name="network_traffic_font_size_title">Single net font size</string>
+    <string name="unit_kbps">KB/s</string>
+    <string name="unit_mbps">MB/s</string>
 
     <!-- Notification headers -->
     <string name="notification_headers_title">Notification Headers</string>
@@ -529,6 +547,8 @@
     <string name="battery_style_title">Battery Style</string>
     <string name="battery_style_port">Portrait</string>
     <string name="battery_style_circle">Circle</string>
+    <string name="battery_style_landscape">Landscape</string>
+    <string name="battery_style_landscape_reversed">Landscape (reversed)</string>
     <string name="battery_style_text">Text</string>
     <string name="battery_percent_title">Show percent</string>
     <string name="battery_percent_summary">Always show the battery percent with the icon</string>
@@ -768,4 +788,11 @@
     <string name="volume_panel_haptics_summary">Whether to enable volume panel haptic feedbacks</string>
     <string name="brightness_slider_haptics_title">Haptic feedback</string>
     <string name="brightness_slider_haptics_summary">Whether to enable haptic feedbacks when changing the brightness</string>
+
+    <!-- Battery info -->
+    <string name="battery_info_footer">Values in this section are provided by OEM and may or may not be an accurate representation of reality and/or may or may not only update after battery recalibration or a full factory reset.\nTreat these as estimates only.</string>
+
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Swipe to screenshot</string>
+    <string name="three_finger_gesture_summary">Swipe down with three fingers to take a screenshot</string>
 </resources>

@@ -26,6 +26,13 @@
         android:defaultValue="false" />
 
     <com.nasp.settings.preferences.SystemSettingSwitchPreference
+        android:key="gaming_mode_battery_saver_disables"
+        android:title="@string/gaming_mode_battery_saver_disables_title"
+        android:summary="@string/gaming_mode_battery_saver_disables_summary"
+        android:dependency="gaming_mode_battery_schedule"
+        android:defaultValue="false" />
+
+    <com.nasp.settings.preferences.SystemSettingSwitchPreference
         android:key="gaming_mode_heads_up"
         android:title="@string/gaming_mode_heads_up_title"
         android:summary="@string/gaming_mode_heads_up_summary"
@@ -54,12 +61,25 @@
         android:key="gaming_mode_battery_schedule"
         android:title="@string/gaming_mode_battery_schedule_title"
         android:summary="@string/gaming_mode_battery_schedule_summary"
+        android:disableDependentsState="true"
         android:defaultValue="false" />
+
+    <com.nasp.settings.preferences.SystemSettingSwitchPreference
+        android:key="gaming_mode_power"
+        android:title="@string/gaming_mode_power_title"
+        android:summary="@string/gaming_mode_power_summary"
+        android:defaultValue="true" />
 
     <com.nasp.settings.preferences.SystemSettingSwitchPreference
         android:key="gaming_mode_bluetooth"
         android:title="@string/gaming_mode_bluetooth_title"
         android:summary="@string/gaming_mode_bluetooth_summary"
+        android:defaultValue="false" />
+
+    <com.nasp.settings.preferences.SystemSettingSwitchPreference
+        android:key="gaming_mode_three_finger"
+        android:title="@string/gaming_mode_three_finger_title"
+        android:summary="@string/gaming_mode_three_finger_summary"
         android:defaultValue="false" />
 
     <com.nasp.settings.preferences.SystemSettingSwitchPreference
@@ -106,4 +126,10 @@
         android:persistent="false"
         android:clickable="false"
         android:summary="@string/gaming_mode_desc" />
+
+    <Preference
+        android:icon="@drawable/ic_info_outline_24dp"
+        android:persistent="false"
+        android:clickable="false"
+        android:summary="@string/gaming_mode_desc_auto" />
 </PreferenceScreen>

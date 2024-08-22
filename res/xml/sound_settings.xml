@@ -154,7 +154,7 @@
         android:order="-97" />
 
     <!-- Volume dialog haptics -->
-    <com.yasp.settings.preferences.SystemSettingSwitchPreference
+    <com.nasp.settings.preferences.SystemSettingSwitchPreference
         android:key="volume_panel_haptics"
         android:title="@string/volume_panel_haptics_title"
         android:summary="@string/volume_panel_haptics_summary"
